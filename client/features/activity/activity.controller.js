@@ -21,6 +21,23 @@ angular.module("app").controller("activityController", function($scope, $state, 
 	
 	$scope.getActivity();
 	
+	$scope.like = function(data, index) {
+		
+		$scope.dataPoints[index].activity_likes += 1;
+		data.disabled = true;
+		console.log(data);
+	}
+	
+	$scope.reply = function(data, index) {
+		
+		data.userReply = true;
+	}
+	
+	$scope.replySubmit = function() {
+		
+		
+	}
+	
 	$scope.limit = 10;
 	
 	$scope.loadMore = function() {

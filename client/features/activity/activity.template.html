@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="main" ng-repeat="data in dataPoints | limitTo:limit">
+	<div class="main" ng-repeat="data in dataPoints | limitTo:limit track by $index">
 		<div class="activity">
 			<img src="{{ data.actor_avator }}" alt="Avatar">
 			<div class="username">
@@ -14,6 +14,13 @@
 				<span class="stats">LIKES: {{ data.activity_likes }}</span>
 				<span class="stats">SHARES: {{ data.activity_shares }}</span>
 				<span class="stats">COMMENTS: {{ data.activity_comments }}</span>
+			</div>
+			<div class="interact">
+				<button class="btn-primary" ng-click="like(data, $index)" ng-disabled="data.disabled">LIKE</button>
+				<button class="btn-warning" ng-click="reply(data, $index)">REPLY</button>
+			</div>
+			<div class="reply">
+				<textarea type="text" placeholder="Enter your reply" ng-show="data.userReply" ng-model="replyText"></textarea>
 			</div>
 		</div>
 			<div class="posting">
