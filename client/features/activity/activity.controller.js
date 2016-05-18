@@ -25,6 +25,7 @@ angular.module("app").controller("activityController", function($scope, $state, 
 	
 	$scope.replySubmit = function(data, index) {
 		
+		$scope.dataPoints[index].activity_comments +=1;
 		console.log(data.replyText);
 		alert("REPLY SUBMITTED");
 		data.replyText = "";
