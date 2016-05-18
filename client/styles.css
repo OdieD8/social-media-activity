@@ -11,6 +11,12 @@ body {
 	text-align: center;
 }
 
+.main {
+	border: 2px solid white;
+	border-radius: 1%;
+	margin: 1%;
+}
+
 .activity {
 	display: inline-block;
 	margin: 0 5%;
@@ -55,6 +61,7 @@ body {
 	color: lightcoral;
 	margin: 20px;
 	min-height: 100px;
+	min-width: 500px;
 	max-width: 500px;
 }
 
@@ -94,5 +101,10 @@ body {
 @media (max-width: 1226px) {
 	.container {
 		width: 60%;
+		text-align: center;
+	}
+	
+	.content, .post {
+		text-align: center;
 	}
 }
