@@ -52,14 +52,22 @@ body {
 }
 
 .content {
-	text-align: center;
+	text-align: left;
 	color: lightcoral;
 	margin: 20px;
+	min-height: 100px;
+	max-width: 400px;
 }
 
 .image {
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
+}
+
+.post {
+	text-align: left;
+	color: lightskyblue;
+	margin: 20px;
 }
 
 .username {

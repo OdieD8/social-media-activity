@@ -26,10 +26,12 @@
 		</div>
 		<div class="posting">
 			<div class="content">
-				DATE: {{ data.activity_date }}
+				<object class="image" data="{{ data.activity_message }}" type="image/jpeg">
+					{{ data.activity_message }}
+				</object>
 			</div>
-			<div class="content">
-				<img class="image" src="{{ data.activity_message }}" alt="Message">
+			<div class="post">
+				POSTING DATE: {{ data.activity_date }}
 			</div>
 		</div>
 	</div>
