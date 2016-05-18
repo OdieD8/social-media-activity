@@ -96,13 +96,3 @@ body {
 		width: 60%;
 	}
 }
-
-@media (min-width: 1340px) {
-	.activity {
-		margin: 0 10%;
-	}
-
-	.posting {
-		margin: 0 10%;
-	}
-}
