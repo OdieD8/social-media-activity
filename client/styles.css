@@ -8,20 +8,18 @@ body {
 .container {
 	width: 80%;
 	margin: 0 auto;
-}
-
-.main {
-	margin: 20px;
+	text-align: center;
 }
 
 .activity {
 	display: inline-block;
-	margin: 0 10%;
+	margin: 0 10% 0 5%;
 }
 
 .posting {
 	display: inline-block;
-	margin: 0 10%;
+	margin: 0 10% 0 5%;
+	padding-bottom: 5%;
 }
 
 .reply {
@@ -33,6 +31,13 @@ body {
 	height: 50px;
 	padding-top: 0;
 	padding-left: 0;
+}
+
+.reply button {
+	margin: 15px 5px;
+	height: 35px;
+	width: 100px;
+	cursor: pointer;
 }
 
 .interact {

@@ -16,15 +16,16 @@
 				<span class="stats">COMMENTS: {{ data.activity_comments }}</span>
 			</div>
 			<div class="interact">
-				<button class="btn-primary" ng-click="like(data, $index)" ng-disabled="data.disabled">LIKE</button>
-				<button class="btn-warning" ng-click="reply(data, $index)">REPLY</button>
+				<button class="btn btn-primary" ng-click="like(data, $index)" ng-disabled="data.disabled">LIKE</button>
+				<button class="btn btn-warning" ng-click="reply(data, $index)">REPLY</button>
 			</div>
-			<div class="reply">
-				<textarea type="text" placeholder="Enter your reply" ng-show="data.userReply" ng-model="replyText"></textarea>
+			<div class="reply" ng-show="data.userReply">
+				<textarea type="text" placeholder="Enter your reply" ng-model="data.replyText"></textarea><br>
+				<button class="btn btn-success" ng-click="replySubmit(data, $index)">SUBMIT</button>
 			</div>
 		</div>
-			<div class="posting">
-				<div class="content">
+		<div class="posting">
+			<div class="content">
 				DATE: {{ data.activity_date }}
 			</div>
 			<div class="content">

@@ -6,16 +6,6 @@ angular.module("app").controller("activityController", function($scope, $state, 
 			.then(function(data) {
 				
 				$scope.dataPoints = data.data;
-				//$scope.avatars = data.data.actor_avator;
-				//$scope.usernames = data.data.actor_username;
-				//$scope.likes = data.data.activity_likes;
-				//$scope.shares = data.data.activity_shares;
-				//$scope.comments = data.data.activity_comments;
-				//$scope.urls = data.data.actor_url;
-				//$scope.providers = data.data.provider;
-				$scope.messages = data.data.activity_message;
-				$scope.dates = data.data.activity_date;
-						
 			});
 	};
 	
@@ -33,9 +23,12 @@ angular.module("app").controller("activityController", function($scope, $state, 
 		data.userReply = true;
 	}
 	
-	$scope.replySubmit = function() {
+	$scope.replySubmit = function(data, index) {
 		
-		
+		console.log(data.replyText);
+		alert("REPLY SUBMITTED");
+		data.replyText = "";
+		data.userReply = false;
 	}
 	
 	$scope.limit = 10;
