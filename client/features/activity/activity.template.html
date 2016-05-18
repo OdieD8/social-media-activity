@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="main" ng-repeat="data in dataPoints | limitTo:limit">
+		<div class="activity">
+			<img src="{{ data.actor_avator }}" alt="Avatar">
+			<div class="username">
+				<span>
+					<strong>{{ data.actor_username }}</strong>
+				</span>
+				<span>
+					({{ data.provider }})
+				</span>
+			</div>
+			<div>
+				<span class="stats">LIKES: {{ data.activity_likes }}</span>
+				<span class="stats">SHARES: {{ data.activity_shares }}</span>
+				<span class="stats">COMMENTS: {{ data.activity_comments }}</span>
+			</div>
+		</div>
+			<div class="posting">
+				<div class="content">
+				DATE: {{ data.activity_date }}
+			</div>
+			<div class="content">
+				<img class="image" src="{{ data.activity_message }}" alt="Message">
+			</div>
+		</div>
+	</div>
+	<div class="button">
+		<button class="btn btn-info" ng-click="loadMore()">LOAD MORE</button>
+	</div>
+</div>

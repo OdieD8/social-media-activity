@@ -1,0 +1,58 @@
+body {
+	background-image: url(https://abs.twimg.com/images/themes/theme9/bg.gif);
+	background-repeat: repeat-y;
+	background-color: #1A1B1F;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.main {
+	margin: 20px;
+}
+
+.activity {
+	display: inline-block;
+	margin: 0 10%;
+}
+
+.posting {
+	display: inline-block;
+	margin: 0 10%;
+}
+
+.content {
+	text-align: center;
+	color: lightcoral;
+	margin: 20px;
+}
+
+.image {
+	width: 200px;
+	height: 200px;
+}
+
+.username {
+	color: lightblue;
+	font-size: 20px;
+	margin: 15px;
+}
+
+.stats {
+	color: white;
+	font-weight: 500;
+	margin: 10px 5px;
+}
+
+.button {
+	text-align: center;
+}
+
+.button button {
+	margin: 20px auto;
+	padding: 10px 15px;
+	cursor: pointer;
+}
